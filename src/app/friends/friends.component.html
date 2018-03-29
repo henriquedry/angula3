@@ -1,0 +1,15 @@
+<div class="container">
+<img src="assets/logo.jpg" alt="..." class="img-thumbnail">
+<h2>My Friends</h2>
+<ul class="amigos">
+  <li *ngFor="let amigo of amigos">
+    <span>{{amigo.nome}}</span>
+  </li>
+</ul>
+
+
+<div>
+  <input [(ngModel)] = "amigo.nome" placeholder="Digite o nome do amigo"/>
+  <button (click)="addAmigo()">Adicionar</button>
+</div>
+</div>

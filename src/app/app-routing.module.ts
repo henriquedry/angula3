@@ -1,18 +1,29 @@
 import { NgModule } from '@angular/core';
+
 import { RouterModule, Routes } from '@angular/router';
-//import { Pagina1Component } from './pagina1/pagina1.component';
-//import { Pagina2Component } from './pagina2/pagina2.component';
+import { FriendsComponent } from './friends/friends.component';
+import { ComprasComponent } from './compras/compras.component';
+
+
 
 const routes: Routes = [
-//{ path: '', redirectTo: '/pagina1', pathMatch: 'full' },
-//{ path: 'pagina1', component: Pagina1Component },
-//{ path: 'pagina2', component: Pagina2Component }
+
+{ path: '', redirectTo: '/inicio', pathMatch: 'full' },
+
+{ path: 'friends', component: FriendsComponent },
+
+{ path: 'compras', component: ComprasComponent }
 
 ];
 
 @NgModule({
+
 imports: [ RouterModule.forRoot(routes) ],
+
 exports: [ RouterModule ]
+
 })
 
-export class AppRoutingModule {}
+export class AppRoutingModule {
+    
+}

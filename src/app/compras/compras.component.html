@@ -1,0 +1,12 @@
+<h2>Compras</h2>
+<ul>
+  <li *ngFor="let compra of compras">
+    <span>{{compra.descricao}}</span>
+  </li>
+</ul>
+
+
+<div>
+  <input [(ngModel)] = "compra.descricao" placeholder="..."/>
+  <button (click)="addCompra()">Adicionar</button>
+</div>
